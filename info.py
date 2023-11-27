@@ -54,13 +54,6 @@ SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '')
 if len(SUPPORT_GROUP) == 0:
     logging.error('SUPPORT_GROUP is missing, exiting now')
     exit()
-else:
-    SUPPORT_GROUP = int(SUPPORT_GROUP)
-    
-OPENAI_API = environ.get('OPENAI_API', '')
-if len(OPENAI_API) == 0:
-    logging.error('OPENAI_API is missing, exiting now')
-    exit()
 
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "")
